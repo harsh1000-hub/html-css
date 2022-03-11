@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <!-- method attribute in form tag is very imp because this will hide the user detail in url link-->
+    <form action="app.js" method="post">
+     <div>  <!-- div tag works as a box -->
+        <!-- required attribute is used to fill form with maditory option-->
+        <!-- placeholder attribute is used to show the transparent fillup field-->
+        <label for="name">Name: <input placeholder="Enter your name" type="text" required name="username" id="name">
+     </div>
+     <div>
+        Email: <input placeholder="Enter your email" type="email" required name="useremail" id="email">
+     </div>
+     <div>
+        Address: <textarea placeholder="Enter your address" name="useraddress" required id="address" cols="30" rows="10"></textarea>
+     </div>
+     <div>
+         Number: <input placeholder="Enter your number" type="number" required name="usernumber" id="number">
+     </div>
+     <div>
+     <!-- select tag for give option to select the gender-->
+     Gender:<select name="usergender"  id="gender">
+         <option value="">choose one</option>
+         <option value="male"> <!-- option tag give choice to the user to select the gender-->
+             Male
+         </option>
+         <option value="Female"> Female</option>
+         <option value="Transgender">Transgender</option>
+     </select>
+    </div>
+    <div>
+        <!-- checkbox attribute to give checkbox to select the option in form of check sign-->
+        Frontend: <input type="checkbox" name="skills" id="Frontend"> 
+        Backend: <input type="checkbox" name="skills" id="Backend">
+    </div>
+    <fieldset>
+        <legend>Mode of Payment</legend>
+        <!-- radio attribute to give the circle form of option to tick the option-->
+        <!-- agr hum name="payment" krte hai toh dono me sai ek time ek he select hoga-->
+        <!-- because database mai payment ke name mai save hai-->
+        <!-- radio atribute ka matlab hai dono mai ek he select hoga toh waha pr radio attribute use krte hai-->
+        COD: <input type="radio" name="payment" id="COD">
+        BHIM UPI:<input type="radio" name="payment" id="BHIM UPI">
+    </fieldset>
+    <div>
+        <!-- password attribute to set the password in form of dot means you can not see the password-->
+        Password:<input type="password" name="password" id="password">
+    </div>
+    <!-- File attribute to choose the file from the local machine-->
+    <div>
+        Choose File:<input type="file" name="file" id="file">
+    </div>
+    <div>
+        Submit Form:<input type="Submit"  value="submit">
+    </div>
+    </form>
+</body>
+</html>
